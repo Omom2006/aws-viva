@@ -93,12 +93,11 @@ Q3Deploy sample application on EC2 instance using AWS CodeDeploy.
 
 
 Q4)Install Terraform on Windows machine. Build, apply and destroy AWS EC2 using Terraform.
-		Step1: Check that no instance is running on EC2
-		Step2: Create an iam user with programmatic password and administrative
-		Step3: Create accesses key and secret key for command line interface
-		Step4: Write a terraform program 
-		copy accesskey and secretkey
-    make a file using "".tf"
+1.Check that no instance is running on EC2
+2.go to iam,go to user,create user,names user,attatch policy,click on administrator access and then create user
+3.go to created user,create access key and then click on CLI,copy access and secret key.
+4.go to vs code and create file.tf and enter code in it
+5.make a file using "".tf"
 		code:
 		provider "aws" {
 			access_key= ""
@@ -109,11 +108,12 @@ Q4)Install Terraform on Windows machine. Build, apply and destroy AWS EC2 using 
 			ami = "" //EC2-launch instance-scrolldown-select ubuntu//
 			instance_type"t3.micro"
 		}
-		Step5: Initialize the terraform by command "terraform init" in terminal
-		Step6: Run the command “terraform plan”
-		Step7: Check the instance on EC2 before the apply command 
-		Step8: Run the command, “terraform apply.”
-    entry a value :yes 
-		Step9: Check terraform created instance on EC2 
-		Step10: Destroy the instance by running command “terraform destroy”.
+
+save this code and then open a new terminal
+command:terraform innit
+terraform plan
+terrraform apply
+terraform destroy
+
+	
 
